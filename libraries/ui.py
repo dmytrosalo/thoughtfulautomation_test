@@ -102,7 +102,7 @@ class UI:
                     "CIO Rating": self.browser.get_text(f"({table_raw_xpath})[{i}]//td[6]"),
                     "# of Projects": self.browser.get_text(f"({table_raw_xpath})[{i}]//td[6]"),
                     "PDF UII": pdf_uii if uii == pdf_uii else '',
-                    "PDF Investment Title": pdf_inv_title if uii == pdf_uii else ''
+                    "PDF Investment Title": pdf_inv_title if uii == pdf_uii else '',
                     "Compare UII": uii == pdf_uii if uii == pdf_uii else '',
                     "Compare Investment Title": inv_title == pdf_inv_title if uii == pdf_uii else ''
                 }
