@@ -7,6 +7,7 @@ class PDFParser:
         self.text = extract_text(file_path)
 
     def get_by_key(self, key):
+        """Get value by key"""
         matches = re.findall(f"{key}.*", self.text)
-        return matches[0].split(':')[1].strip()
+        return matches[0].split('')[1].strip()
 
